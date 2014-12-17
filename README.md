@@ -4,4 +4,4 @@ This is a compiler I wrote for my Compilers class.  It takes in a text file cons
 
 To compile: make truc
 
-To run: ./truc <file name>
+To run: ./truc fileName
