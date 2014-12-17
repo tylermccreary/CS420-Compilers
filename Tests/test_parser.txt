@@ -1,0 +1,83 @@
+program looper;
+	# This is a real trupl program.
+	# Here's the declarative part.
+	a: int;
+	b: int;
+	c: int;
+	d: bool;
+	e: bool;
+	f: bool;
+    h: int;
+
+procedure proc1 (x, y, z : int; r, s, t: bool)
+	t: int;
+	
+	begin
+        h := x;
+		t := s;
+		x := y;
+		y := x;        #y := z = x; fails
+		t := x < y;               #t := 0; fails
+
+		if (s) then
+			begin
+				print(x);
+			end
+		else
+			begin
+				print x;
+				r := not r;
+			end;
+
+		if (x < y) then
+			begin
+				if (z >= x) or (y <= y) and (x = x) or (x <> y) then
+					begin
+						print (x * y);
+						if (y > x) then
+							begin
+								y := 1;
+							end #if you put a semicolon here, it will fail
+						else
+							begin
+								while (not t)
+									begin
+										y := 69;
+									end;
+							end;
+					end;
+			end;	
+	end;
+
+procedure proc2 (x, y, z : int; r, s, t: bool)
+	
+	begin
+		t := s;
+		x := y;
+		s := z = y;
+		t := z < y;
+	end;
+
+begin
+	a := 0;
+	d := 0 = 0;
+	c := 0;
+	d := 0 = 1;
+	e := not (d);
+	f := not (not (not (not f) ) );
+
+	#expr test
+	d := (c < a) or (a = c);
+
+	proc1 (a,b,c,d,e,f);
+	proc2 (a, b, c, d, e, f);
+
+	c := 12;
+	a := b;
+	d := 1 = 1;
+	d := (a * b * b / a * a > c) and d and (a * a + a - a = a) or (a < c); #same as parse_term_prm_test.txt
+	d := not(d);
+	c := ------+-a;
+	#d := a := d; #this should fail
+	
+end; # end program

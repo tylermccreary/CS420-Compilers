@@ -1,0 +1,20 @@
+program semt1;
+
+   a: bool;
+   b: int;
+
+   procedure p (a: int) # ; is optional here
+
+   begin # p
+
+     print a;
+
+   end; #p
+
+begin # semt1
+
+  b := 1;
+
+  p (b);
+
+end; 

@@ -1,0 +1,29 @@
+program looper;
+	# This is a real trupl program.
+	# Here's the declarative part.
+	a: int;
+	b: int;
+	c: int;
+    d: bool;
+    e: bool;
+    f: bool;
+
+    begin
+        a := b;
+        d := not e; 
+
+        if (b > c) then
+			begin
+				a := a + 1;
+			end #if you put a semicolon here, it will fail
+		else
+			begin
+				while (not f)
+					begin
+                        if (c <> 69) then
+                            begin
+						        c := 69;
+                            end;
+					end;
+			end;  
+    end;

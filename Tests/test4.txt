@@ -1,0 +1,13 @@
+program looper;
+	# This is a real trupl program.
+	# Here's the declarative part.
+	a: int;
+	b: int;
+	c: int;
+    d: bool;
+    e: bool;
+    f: bool;
+
+    begin
+        d := (a < b) and (a > b);
+    end;

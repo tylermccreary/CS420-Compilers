@@ -1,0 +1,12 @@
+program lkasefjksd;
+    a: int;
+    b: int;
+    c: int;
+    d: bool;
+begin
+    while a > c
+    begin
+        a := a + -1;
+        d := not d;
+    end;
+end;
